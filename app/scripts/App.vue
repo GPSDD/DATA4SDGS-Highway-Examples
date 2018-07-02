@@ -15,7 +15,7 @@ export default {
   name: 'app',
   created() {
     // Actions for hydrating store
-    this.$store.dispatch('setTimeline');
+    // this.$store.dispatch('setTimeline');
     this.$store.dispatch('getWaterRiskLayers');
     this.$store.dispatch('getWaterBasins');
   },

@@ -1,0 +1,35 @@
+<div class="c-search">
+  <div class="container">
+    <div class="input">
+      <input
+        type="search"
+        placeholder="Search for data..."
+        class="search-input js-search-input"
+        v-model.trim="queryState"
+        @keyup.down="navigateDown"
+        ref="search-input"
+        v-click-outside="onClickOutside"
+        v-on:click="isOpen = true"
+      >
+      <icon-component class="search-icon -round -medium" name="icon-search"></icon-component>
+    </div>
+    <ul v-if="showSearchSuggestions && isOpen && datasets.length > 0" class="search-results-list" ref="search-results-list">
+      <li v-if="loading" class="search-results-item">Searching...</li>
+      <li v-else-if="error" class="search-results-item -error">No datasets found</li>
+      <li
+        v-if="!loading"
+        tabindex="-1"
+        class="search-results-item -item js-search-results-item"
+        v-for="(dataset, index) in datasets"
+        @click="selectDataset(dataset)"
+        @keyup.enter="selectDataset(dataset)"
+        @keyup.down="navigateDown"
+        @keyup.up="navigateUp"
+      >
+        {{dataset.name}}
+      </li>
+    </ul>
+  </div>
+</div>
+
+

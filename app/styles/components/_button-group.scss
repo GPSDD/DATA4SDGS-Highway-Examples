@@ -1,0 +1,13 @@
+.c-button-group {
+  display: flex;
+  height: 100%;
+
+  &.-center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.-justified {
+    justify-content: space-between;
+  }
+}

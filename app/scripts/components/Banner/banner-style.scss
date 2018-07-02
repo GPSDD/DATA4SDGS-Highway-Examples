@@ -1,0 +1,57 @@
+// Import global variables
+@import '../../../styles/variables';
+
+.c-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+
+  padding: $small-margin;
+  background-color: #FFF;
+  border-top: 4px solid;
+
+  z-index: 9999999999;
+  box-shadow: $box-shadow-2;
+  animation: appear 300ms 2s forwards;
+
+
+  .banner-heading {
+    color: #000;
+    margin-bottom: $small-margin / 2;
+  }
+
+  .banner-body {
+    color: #000;
+    font-size: $font-size-xsmall;
+    margin: 0;
+
+    a {
+      text-transform: lowercase;
+    }
+  }
+
+  .c-button {
+    color: $white;
+    background-color: #354283;
+
+    &:hover {
+      color: $white;
+      background-color: #435198;
+    }
+  }
+
+  .dismiss-bg {
+    background-color: #a0a0a0;
+  }
+
+  @keyframes appear {
+    0% { transform: translateY(100%) }
+    100% { transform: translateY(0) }
+  }
+}

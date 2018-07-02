@@ -1927,19 +1927,19 @@ button {
           animation-delay: 700ms !important; }
 @font-face {
   font-family: 'bebas-neue';
-  src: url(/static/fonts/BebasNeue-Regular.a105cda.otf) format("opentype"); }
+  src: url(DATA4SDGS-Highway-Examples/static/fonts/BebasNeue-Regular.a105cda.otf) format("opentype"); }
 
 @font-face {
   font-family: 'proxima-nova';
-  src: url(/static/fonts/proxima_nova_reg.d2529b4.woff2) format("woff2"), url(/static/fonts/proxima_nova_reg.fe2ad62.woff) format("woff"); }
+  src: url(DATA4SDGS-Highway-Examples/static/fonts/proxima_nova_reg.d2529b4.woff2) format("woff2"), url(DATA4SDGS-Highway-Examples/static/fonts/proxima_nova_reg.fe2ad62.woff) format("woff"); }
 
 @font-face {
   font-family: 'proxima-nova-extrabold';
-  src: url(/static/fonts/proximanova-extrabold.b6eaed7.woff2) format("woff2"), url(/static/fonts/proximanova-extrabold.08acb85.woff) format("woff"); }
+  src: url(DATA4SDGS-Highway-Examples/static/fonts/proximanova-extrabold.b6eaed7.woff2) format("woff2"), url(DATA4SDGS-Highway-Examples/static/fonts/proximanova-extrabold.08acb85.woff) format("woff"); }
 
 @font-face {
   font-family: 'proxima-nova-semibold';
-  src: url(/static/fonts/proxima_nova_semi_bold.eb181dd.woff) format("woff"); }
+  src: url(DATA4SDGS-Highway-Examples/static/fonts/proxima_nova_semi_bold.eb181dd.woff) format("woff"); }
 
 /*
   Animation
@@ -3945,4 +3945,4 @@ to {
         font-size: 20px;
 }
 
-/*# sourceMappingURL=app.b4ed1342ccd1a19c8a82b6ef3f0feaa0.css.map*/
+/*# sourceMappingURL=app.cd521b1a2af2581fe6a55c3cddc1641e.css.map*/

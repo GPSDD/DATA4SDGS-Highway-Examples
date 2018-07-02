@@ -24,7 +24,7 @@
           attributionControl: false,
           zoom: 3
         },
-        basemapUrl: 'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+        basemapUrl: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
       };
     },
     computed: {

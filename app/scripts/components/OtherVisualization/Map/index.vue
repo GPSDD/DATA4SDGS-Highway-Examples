@@ -31,7 +31,7 @@
           zoom: 3,
           minZoom: 5
         },
-        basemapUrl: 'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+        basemapUrl: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
       };
     },
 

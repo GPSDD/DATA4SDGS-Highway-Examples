@@ -21,11 +21,11 @@ const routes = [
   },
   {
     path: '*',
-    redirect: '/conflicts-related-to-protected-areas'
+    redirect: 'conflicts-related-to-protected-areas'
   }
 ];
 
 export default new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   routes,
 });

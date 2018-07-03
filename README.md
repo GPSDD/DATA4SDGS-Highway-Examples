@@ -31,7 +31,9 @@ npm install
 ````
 After the installation is completed, create a new file and name it `.env`. Copy the content of the project's `.env.sample` file in it. And fill in the blanks with the appropriate values. The values correspond to the following things:
 * API_BASE_URL - Map layers + datasets api base url. This should point to the _data-highways_ api.
-* PUBLIC_URL - Base url of the app, in our case `DATA4SDGS-Highway-Examples/` as it hosted in gh-pages
+* PUBLIC_URL - Base url of the app:
+  - Local develompent: `/`
+  - Production: `DATA4SDGS-Highway-Examples/` as it hosted in gh-pages and needs it to resolve the assets url
 
 ## Usage
 To run the project in development mode you need to execute the following command on your terminal:

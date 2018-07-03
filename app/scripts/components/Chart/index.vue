@@ -29,7 +29,7 @@ export default{
       return `chart-container-${this.container}`;
     },
     formatedData() {
-      const data = Object.values(this.chartData.transition_types);
+      const data = Object.values(this.chartData.transition);
       data.unshift('data');
 
       return [data];

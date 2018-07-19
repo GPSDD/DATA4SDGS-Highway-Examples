@@ -13,6 +13,7 @@
     "lint": "eslint --ext .js,.vue app test/unit/specs",
     "publish": "gh-pages -d dist",
     "deploy": "NODE_ENV=production npm run build && npm run publish",
+    "deploy-windows": "cross-env NODE_ENV=production npm run build && npm run publish",
     "postinstall": "NODE_ENV=production npm run build"
   },
   "dependencies": {
@@ -28,6 +29,7 @@
     "chai": "^3.5.0",
     "chalk": "^1.1.3",
     "connect-history-api-fallback": "^1.1.0",
+    "cross-env": "^5.2.0",
     "css-loader": "^0.25.0",
     "dotenv": "^2.0.0",
     "eslint": "^3.7.1",

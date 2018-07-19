@@ -69,6 +69,7 @@
 
         if (setA.size === setB.size) setB.clear();
 
+        console.log(setB);
         for (const layer of union) {
           if (!setB.has(layer)) {
             this.layerManager.addLayer(layer);

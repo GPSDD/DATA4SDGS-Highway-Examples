@@ -82,11 +82,12 @@ const DEFAULT_LAYERS = [{
   'applicationConfig': {},
   'staticImageConfig': {},
   'updatedAt': '2017-01-12T15:40:02.963Z'
-}, {
-  'id': 'bd47397c-b714-4ced-9fe9-d20b0b353e3f', //dataset id
+}, 
+{
+  'id': '2a524d11-1ee6-49c1-a79f-b23afd553f3a', //dataset id
   'name': 'Population in South Africa',
   'slug': 'population-in-south-africa',
-  'dataset': 'bd47397c-b714-4ced-9fe9-d20b0b353e3f',
+  'dataset': '2a524d11-1ee6-49c1-a79f-b23afd553f3a',
   'description': 'Population in South Africa',
   'application': ['data4sdgs'],
   'iso': [],
@@ -101,16 +102,21 @@ const DEFAULT_LAYERS = [{
     'sql_config': [],
     'body': {
       'maxzoom': 18,
-      'minzoom': 3,
+      'minzoom': 3, 
       'layers': [{
         'type': 'cartodb',
         'options': {
-          'sql': 'Select * from pop_well',
-          'cartocss': '#pop_well {raster-opacity:1; raster-scaling:near; raster-colorizer-default-mode: linear; raster-colorizer-default-color:  transparent; raster-colorizer-epsilon:0.11; raster-colorizer-stops: stop(1, #f3b641) stop(20, #FFEE99) stop(70, #E5CC4C) stop(150, #E5C319) stop(300, #B29919) stop(500, #998319) }',
+          'sql': `Select * from ne_10m_populated_places_simple`,
+          'cartocss': `#ne_10m_populated_places_simple {
+            marker-width: ramp([pop_max], range(2, 35), quantiles(5));
+            marker-fill: #EE4D5A;
+            marker-fill-opacity: 0.9;
+            marker-allow-overlap: true;
+            marker-line-width: 0.5;
+            marker-line-color: #8a1515;
+            marker-line-opacity: 1;
+          }`,
           'cartocss_version': '2.3.0',
-          'geom_column': 'the_raster_webmercator',
-          'geom_type': 'raster',
-          'raster_band': 1
         }
       }]
     }
@@ -123,7 +129,8 @@ const DEFAULT_LAYERS = [{
   'applicationConfig': {},
   'staticImageConfig': {},
   'updatedAt': '2017-01-12T17:12:12.626Z'
-}, {
+}, 
+{
   'id': 'ee2c5877-f212-4eb4-a63a-a82ba7e4e168', // dataset id
   'name': 'Water basins from South Africa',
   'slug': 'water-basins-from-south-africa',
@@ -289,6 +296,7 @@ export default {
     getActiveLayers({
       layers
     }) {
+      console.log(layers.active)
       return layers.list.filter(layer => layers.active.includes(layer.id));
     }
   }

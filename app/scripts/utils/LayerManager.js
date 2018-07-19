@@ -54,6 +54,7 @@ export default class LayerManager {
     const layer = Object.assign({}, layerSpec.layerConfig, {
       id: layerSpec.id
     });
+    console.log(layer);
 
     this.abortRequest(layer.id);
     const xmlhttp = new XMLHttpRequest();

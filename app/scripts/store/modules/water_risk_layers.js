@@ -84,11 +84,11 @@ const DEFAULT_LAYERS = [{
   'updatedAt': '2017-01-12T15:40:02.963Z'
 }, 
 {
-  'id': '2a524d11-1ee6-49c1-a79f-b23afd553f3a', //dataset id
+  'id': '17cce87c-029f-4210-b59c-1c90d0e8ae48', //dataset id
   'name': 'Population in South Africa',
   'slug': 'population-in-south-africa',
-  'dataset': '2a524d11-1ee6-49c1-a79f-b23afd553f3a',
-  'description': 'Population in South Africa',
+  'dataset': '17cce87c-029f-4210-b59c-1c90d0e8ae48',
+  'description': 'Populated Places',
   'application': ['data4sdgs'],
   'iso': [],
   'provider': 'cartodb',

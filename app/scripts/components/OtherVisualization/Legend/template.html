@@ -7,7 +7,7 @@
     </button>
   </div>
   <ul class="legend-list" v-show="isOpen">
-    <li v-for="item in items">
+    <li v-for="item in items" v-if="!item.hideSwitch">
       <input :id="item.id" class="c-switch" type="checkbox" :checked="activeItems.includes(item.id)" @change="onCboxChange($event, item.id)">
       <label :for="item.id">{{ item.name }}</label>
     </li>

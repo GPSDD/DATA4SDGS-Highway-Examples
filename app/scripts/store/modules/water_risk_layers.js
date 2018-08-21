@@ -24,6 +24,7 @@ const DEFAULT_LAYERS = [{
   'default': true,
   'protected': false,
   'env': 'production',
+  'hideSwitch': true,
   'layerConfig': {
     'account': 'apihighways',
     'params_config': [],
